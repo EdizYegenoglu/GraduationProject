@@ -7,10 +7,16 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: 
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/Locomotion.unity
     guid: 988cc211ff83f4bd58a3f401f259987f
+  - enabled: 0
+    path: Assets/Scenes/HandTracking.unity
+    guid: 8198840e1216362488465f980f5ae95e
+  - enabled: 1
+    path: Assets/Scenes/Environment_Free.unity
+    guid: a3611680fcbf4bf4e9beda7b61443544
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b8ddb6225561d4e49adfa7b415acb380,
       type: 2}
