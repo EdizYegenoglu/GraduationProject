@@ -560,6 +560,8 @@
 "Assets/Scripts/LocomotionNstuff/ContinuousMovement.cs"
 "Assets/Scripts/LocomotionNstuff/HandPresence.cs"
 "Assets/Scripts/LocomotionNstuff/LocomotionControllerTwo.cs"
+"Assets/Scripts/Photo.cs"
+"Assets/Scripts/Polaroid.cs"
 "Assets/Scripts/WaterObjects/BoatMovement.cs"
 "Assets/Scripts/WaterObjects/BuoyancyObject.cs"
 "Assets/Scripts/WaterObjects/WaterManager.cs"
