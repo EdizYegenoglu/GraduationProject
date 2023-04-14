@@ -278,6 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageRenderer: {fileID: 7541224128000848892}
+  fadeDuration: 30
 --- !u!54 &3561784221247622432
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -4137,6 +4137,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5794940213484716832, guid: 5e8037481e565c846b79114587efb23d,
+        type: 3}
+      propertyPath: fadeDuration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6737581143863821191, guid: 5e8037481e565c846b79114587efb23d,
         type: 3}
       propertyPath: m_InteractionManager
