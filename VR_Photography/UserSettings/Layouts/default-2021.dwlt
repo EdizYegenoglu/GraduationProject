@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2560
     height: 1349
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 88
+  controlID: 17
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -121,14 +121,14 @@ MonoBehaviour:
     y: 864
     width: 2015
     height: 435
-  m_MinSize: {x: 101, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
-  m_ActualView: {fileID: 19}
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 19}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 89
+  controlID: 79
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 90
+  controlID: 80
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -3196,22 +3196,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Polytope Studio/Lowpoly Medieval Environments/Prefabs/Trees
+    - Assets/Oculus/Interaction/Samples/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Polytope Studio/Lowpoly Medieval Environments/Prefabs/Trees
+  - Assets/Oculus/Interaction/Samples/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Ercan\Documents\GitHub\GraduationProject\VR_Photography
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 58}
-    m_SelectedIDs: 20d80100
-    m_LastClickedID: 120864
-    m_ExpandedIDs: 0000000076d7010078d701007ad701007cd7010080d7010082d7010084d7010086d7010088d701008ad701000ed8010014d80100b4f20100c0110200d219020000ca9a3b
+    scrollPos: {x: 0, y: 38}
+    m_SelectedIDs: 00d40100
+    m_LastClickedID: 119808
+    m_ExpandedIDs: 000000006c2501006e250100702501007225010074250100762501007a2501007c2501007e25010080250100842501009a25010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3239,7 +3239,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000076d7010078d701007ad701007cd701007ed7010080d7010082d7010084d7010086d7010088d701008ad70100
+    m_ExpandedIDs: 000000006c2501006e25010070250100722501007425010076250100782501007a2501007c2501007e250100802501008225010084250100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3264,9 +3264,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 00c60200
-    m_LastClickedInstanceID: 181760
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000d29c01003e9d0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -3369,23 +3369,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 8ee10200
-      m_LastClickedID: 188814
-      m_ExpandedIDs: e8ebf0ffa4ecf0ffd6f5f0fffac8f1ff92c9f1ffc2d2f1ffe60cf2ff7c0df2ff3410f2ffd22bf2ff6a2cf2ff9a35f2ff42a9f2fffca9f2ffd2acf2ffccc2f2ff88c3f2ffe2ccf2ffac6bf3ff6c6cf3ffa275f3ff8cd5f3ff48d6f3ff7adff3ff1e87f4ff128df4ff689bf4fff654f5ffb655f5ffe85ef5ff8c3df9ff1c43f9ff8852f9ffc258f9ff1c00faffd600faff3803faff7c81faff3882faff3c8bfaff48dffaff46e8fafff0f2fbffacf3fbff26f9fbff5689fcff309efcff0ca5fcffd6dffcff0c3ffdffce5afdffd05afdff9e72fdffbee4feffe8e5feffb8d1010020d2010084d901008cd90100dcdb0100e4db01006cdc01001ee70100b2ea0100b6ea010022eb0100c0eb010050f10100f0f1010094fb01007e0402007e0b0200060d02006a0d02007a0d0200a60d0200080e02004432020080330200204202002842020000430200a456020010570200845802007e6f0200fc6f0200128302004a84020052aa0200c8ab0200ccab0200d0b302003cb40200deb402000ab5020042c50200aec502007cc6020024c7020032e20200a2e30200
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: d2bbfcff90bcfcff44bffcffaaecfcff64edfcff18f0fcff1a19fdffd419fdff881cfdff5436fdff0e37fdffc239fdffaa6efdff646ffdff1472fdff528cfdff0c8dfdffbc8ffdffd0bffdff8ac0fdff3ac3fdff9ad5fdff54d6fdff04d9fdff72ecfdff2cedfdffdceffdff7a12feff3413feffe415feff2a2dfeffe62dfeff9630feff9857feff5258feff025bfeffd07bfeff8a7cfeff3a7ffeff98f4feff52f5feff02f8feff5e2cffff182dffffcc2fffff3e4cfffffc4cffff2656ffffaa63ffff12210100003f0100604a0100884c0100baab0100bab501007adc0100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Camera
-        m_OriginalName: Camera
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 181570
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -3621,9 +3621,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.5844412, y: 4.4843264, z: 0.09638749}
+    m_Target: {x: 1.0242076, y: 4.258436, z: 0.11030558}
     speed: 2
-    m_Value: {x: 2.5844412, y: 4.4843264, z: 0.09638749}
+    m_Value: {x: 1.0242076, y: 4.258436, z: 0.11030558}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -3670,13 +3670,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.0021303268, y: 0.89892256, z: 0.0046374104, w: 0.43730357}
+    m_Target: {x: 0.13790064, y: 0.6592628, z: -0.12223687, w: 0.72848225}
     speed: 2
-    m_Value: {x: -0.002131049, y: 0.8992273, z: 0.0046389825, w: 0.43745184}
+    m_Value: {x: 0.13758337, y: 0.66168606, z: -0.12269467, w: 0.7267657}
   m_Size:
-    m_Target: 0.31926042
+    m_Target: 0.6462359
     speed: 2
-    m_Value: 0.31926042
+    m_Value: 0.6462359
   m_Ortho:
     m_Target: 0
     speed: 2
