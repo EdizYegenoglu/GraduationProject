@@ -1,12 +1,19 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class Polaroid : MonoBehaviour
 {
     public GameObject photoPrefab = null;
     public MeshRenderer screenRenderer = null;
     public Transform spawnLocation = null;
+    
+    public int counter = 8;
+    private bool filmCartridge = true;
 
     private Camera renderCamera = null;
+
+    public TMP_Text frameCount;
 
     private void Awake()
     {
@@ -19,13 +26,13 @@ public class Polaroid : MonoBehaviour
         // TakePhoto();
     }
 
-    void Update()
-{
-    if (Input.GetKeyDown(KeyCode.Space))
-    {
-        TakePhoto();
+    void Update(){
+        frameCount.text = counter.ToString();
+
+        if (Input.GetKeyDown(KeyCode.Space)){
+            TakePhoto();
+        }
     }
-}
 
     private void CreateRenderTexture()
     {
@@ -38,8 +45,12 @@ public class Polaroid : MonoBehaviour
 
     public void TakePhoto()
     {
-        Photo newPhoto = CreatePhoto();
-        SetPhotoImage(newPhoto);
+        Debug.Log(filmCartridge);
+        photoCounter();
+        if(filmCartridge){
+            Photo newPhoto = CreatePhoto();
+            SetPhotoImage(newPhoto);
+        }
     }
 
     private Photo CreatePhoto()
@@ -64,6 +75,16 @@ public class Polaroid : MonoBehaviour
         photo.Apply();
 
         return photo;
+    }
+
+    public void photoCounter(){
+        counter--;
+        Debug.Log(counter);
+
+        if(counter < 0){
+            filmCartridge = false;
+            counter = 0;
+        }
     }
 
     // public void TurnOn()
