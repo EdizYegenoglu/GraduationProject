@@ -19,6 +19,10 @@ public class ContinuousMovement : MonoBehaviour
     private Vector2 inputAxis;
     private CharacterController character;
 
+// turn room off 
+    public GameObject room;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -45,11 +49,14 @@ public class ContinuousMovement : MonoBehaviour
 
         //gravity
         bool isGrounded = CheckIfGrounded();
-        if (isGrounded)
+        if (isGrounded){
             fallingSpeed = 0;
-        else
+            // Turn room off 
+            room.SetActive(false);
+        }
+        else{
             fallingSpeed += gravity * Time.fixedDeltaTime;
-
+        }
         character.Move(Vector3.up * fallingSpeed * Time.fixedDeltaTime);
 
     }
@@ -61,7 +68,7 @@ public class ContinuousMovement : MonoBehaviour
         character.center = new Vector3(capsuleCenter.x, character.height/2 + character.skinWidth, capsuleCenter.z);
     }
 
-    bool CheckIfGrounded()
+    public bool CheckIfGrounded()
     {
         //tells us if on ground
         Vector3 rayStart = transform.TransformPoint(character.center);
