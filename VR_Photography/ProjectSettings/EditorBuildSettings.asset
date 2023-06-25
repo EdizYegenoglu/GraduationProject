@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Oculus/Interaction/Samples/Scenes/Examples/HandGrabExamples.unity
     guid: 39ae0e546b9edc0408d3b11c6a7c2814
   - enabled: 1
-    path: Assets/Scenes/OVR_Rig.unity
+    path: Assets/Scenes/Main.unity
     guid: 13fccbd87ae83b14eaacc27a3bc0729e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b8ddb6225561d4e49adfa7b415acb380,
