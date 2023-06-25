@@ -556,6 +556,10 @@
 "Assets/Other/Oculus/OVRMetricsTool/Plugins/Android/OVRMetricsToolSDK.cs"
 "Assets/Polytope Studio/Lowpoly Medieval Demos/Environment_Free/MouseLook.cs"
 "Assets/Polytope Studio/Lowpoly Medieval Demos/Environment_Free/PlayerMovement.cs"
+"Assets/Scripts/DissolveScripts/DissolveChilds.cs"
+"Assets/Scripts/DissolveScripts/DissolveChilds1.cs"
+"Assets/Scripts/DissolveScripts/DissolveChilds2.cs"
+"Assets/Scripts/DissolveScripts/DissolveChilds3.cs"
 "Assets/Scripts/LocomotionNstuff/ContinuousMovement.cs"
 "Assets/Scripts/LocomotionNstuff/HandPresence.cs"
 "Assets/Scripts/LocomotionNstuff/LocomotionControllerTwo.cs"
@@ -569,6 +573,10 @@
 "Assets/Scripts/WaterObjects/BoatMovement.cs"
 "Assets/Scripts/WaterObjects/BuoyancyObject.cs"
 "Assets/Scripts/WaterObjects/WaterManager.cs"
+"Assets/ShaderGraph_Dissolve/Utility/Scripts/DissolveOffest.cs"
+"Assets/ShaderGraph_Dissolve/Utility/Scripts/Follow.cs"
+"Assets/ShaderGraph_Dissolve/Utility/Scripts/Rotator.cs"
+"Assets/ShaderGraph_Dissolve/Utility/Scripts/RotatorDissolveDir.cs"
 -langversion:9.0
 
 /deterministic
