@@ -17,9 +17,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Environment_Free.unity
     guid: a3611680fcbf4bf4e9beda7b61443544
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CameraSetup.unity
     guid: fd68c7e0d0d86ec408cd4bf301518127
+  - enabled: 0
+    path: Assets/Oculus/Interaction/Samples/Scenes/Examples/GestureExamples.unity
+    guid: 4ee2a082a0e621b49ab01667c66f1599
+  - enabled: 0
+    path: Assets/Oculus/Interaction/Samples/Scenes/Examples/HandGrabExamples.unity
+    guid: 39ae0e546b9edc0408d3b11c6a7c2814
+  - enabled: 1
+    path: Assets/Scenes/OVR_Rig.unity
+    guid: 13fccbd87ae83b14eaacc27a3bc0729e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b8ddb6225561d4e49adfa7b415acb380,
       type: 2}
