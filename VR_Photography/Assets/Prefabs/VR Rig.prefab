@@ -1006,6 +1006,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   additionalHeight: 0.2
+  room: {fileID: 0}
 --- !u!143 &150353471564008182
 CharacterController:
   m_ObjectHideFlags: 0

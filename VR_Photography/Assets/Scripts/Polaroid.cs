@@ -23,7 +23,6 @@ public class Polaroid : MonoBehaviour
     private void Start()
     {
         CreateRenderTexture();
-        // TakePhoto();
     }
 
     void Update(){
@@ -86,16 +85,4 @@ public class Polaroid : MonoBehaviour
             counter = 0;
         }
     }
-
-    // public void TurnOn()
-    // {
-    //     renderCamera.enabled = true;
-    //     screenRenderer.material.color = Color.white;
-    // }
-
-    // public void TurnOff()
-    // {
-    //     renderCamera.enabled = false;
-    //     screenRenderer.material.color = Color.black;
-    // }
 }

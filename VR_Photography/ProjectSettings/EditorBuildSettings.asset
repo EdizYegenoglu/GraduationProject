@@ -14,9 +14,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/HandTracking.unity
     guid: 8198840e1216362488465f980f5ae95e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Environment_Free.unity
     guid: a3611680fcbf4bf4e9beda7b61443544
+  - enabled: 1
+    path: Assets/Scenes/CameraSetup.unity
+    guid: fd68c7e0d0d86ec408cd4bf301518127
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b8ddb6225561d4e49adfa7b415acb380,
       type: 2}
