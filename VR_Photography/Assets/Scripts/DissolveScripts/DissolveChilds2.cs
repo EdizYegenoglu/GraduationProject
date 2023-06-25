@@ -5,7 +5,7 @@ using UnityEngine;
 public class DissolveChilds2 : MonoBehaviour
 {
     List<Material> materials = new List<Material>();
-    float value = 0f;
+    public float value = 0f;
     bool dissolveInProgress = false;
     bool dissolveComplete = false;
 
@@ -14,15 +14,16 @@ public class DissolveChilds2 : MonoBehaviour
         for (int i = 0; i < renders.Length; i++) {
             materials.AddRange(renders[i].materials);
         }
+    SetValue(1);
     }
 
     private void Reset() {
         Start();
-        SetValue(0);
+        SetValue(1);
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Keypad2)) {
+        if (Input.GetKeyDown(KeyCode.Keypad0)) {
             Dissolve();
         }
     }

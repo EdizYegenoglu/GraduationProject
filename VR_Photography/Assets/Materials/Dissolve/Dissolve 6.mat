@@ -73,7 +73,7 @@ Material:
     - _QueueOffset: 0
     - _Smoothness: 0.216
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 0}
+    - _BaseColor: {r: 0.6886792, g: 0.63889265, b: 0.5360003, a: 0}
     - _EdgeColor: {r: 0, g: 0.5383866, b: 5.3403134, a: 0}
     - _NoiseUVSpeed: {r: 0, g: 0, b: 0, a: 0}
     - _Offest: {r: 0, g: 0, b: 0, a: 0}

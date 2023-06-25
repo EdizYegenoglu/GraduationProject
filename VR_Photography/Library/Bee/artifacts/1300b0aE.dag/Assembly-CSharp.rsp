@@ -565,6 +565,7 @@
 "Assets/Scripts/LocomotionNstuff/LocomotionControllerTwo.cs"
 "Assets/Scripts/Photo.cs"
 "Assets/Scripts/pigeon/flyAway.cs"
+"Assets/Scripts/pigeon/FlyLine.cs"
 "Assets/Scripts/pigeon/pigeonBehaviour.cs"
 "Assets/Scripts/pigeon/spawner.cs"
 "Assets/Scripts/pigeon/walkArea.cs"
