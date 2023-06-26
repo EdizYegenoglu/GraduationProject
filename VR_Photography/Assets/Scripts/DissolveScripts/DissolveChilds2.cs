@@ -8,13 +8,14 @@ public class DissolveChilds2 : MonoBehaviour
     public float value = 0f;
     bool dissolveInProgress = false;
     bool dissolveComplete = false;
+    bool audio = false;
 
     void Start() {
         var renders = GetComponentsInChildren<Renderer>();
         for (int i = 0; i < renders.Length; i++) {
             materials.AddRange(renders[i].materials);
         }
-    SetValue(1);
+        SetValue(1);
     }
 
     private void Reset() {
@@ -23,7 +24,7 @@ public class DissolveChilds2 : MonoBehaviour
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Keypad0)) {
+        if (Input.GetKeyDown(KeyCode.Keypad2)) {
             Dissolve();
         }
     }
@@ -37,6 +38,7 @@ public class DissolveChilds2 : MonoBehaviour
             StartCoroutine(UndissolveCoroutine());
             dissolveComplete = false;
         }
+        PlayAllAudioComponents(transform);
     }
 
     IEnumerator DissolveCoroutine() {
@@ -66,4 +68,35 @@ public class DissolveChilds2 : MonoBehaviour
             materials[i].SetFloat("_Dissolve", value);
         }
     }
+
+    private IEnumerator FadeOutAudio(AudioSource audioSource, float fadeDuration){
+        float initialVolume = audioSource.volume;
+        float timer = 0f;
+
+        while (timer < fadeDuration){
+            timer += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(initialVolume, 0f, timer / fadeDuration);
+            yield return null;
+        }
+        audioSource.Stop();
+        audioSource.volume = initialVolume;
+    }
+
+    private void PlayAllAudioComponents(Transform parent){
+        foreach (Transform child in parent){
+            AudioSource audioSource = child.GetComponent<AudioSource>();
+            if (audioSource != null){
+                if (audioSource.isPlaying){
+                    Debug.Log("audio false");
+                    StartCoroutine(FadeOutAudio(audioSource, 1.0f));
+                }
+                else{
+                    Debug.Log("audio true");
+                    audioSource.Play();
+                }
+            }
+            PlayAllAudioComponents(child);
+        }
+    }
+
 }
