@@ -9,9 +9,11 @@ public class DissolveChilds : MonoBehaviour
     bool dissolveInProgress = false;
     bool dissolveComplete = false;
     bool audio = false;
-
+    public bool muteAudio = false;
     public float delayPlay = 0f;
     public float delayStop = 0f;
+
+
 
     void Start() {
         Invoke("Dissolve", delayPlay);
@@ -28,12 +30,6 @@ public class DissolveChilds : MonoBehaviour
         SetValue(1);
     }
 
-    void Update() {
-        if (Input.GetKeyDown(KeyCode.Keypad0)) {
-            Dissolve();
-        }
-    }
-
     public void Dissolve(){
         if (!dissolveInProgress && !dissolveComplete) {
             StartCoroutine(DissolveCoroutine());
@@ -43,7 +39,9 @@ public class DissolveChilds : MonoBehaviour
             StartCoroutine(UndissolveCoroutine());
             dissolveComplete = false;
         }
-        PlayAllAudioComponents(transform);
+        if(!muteAudio){
+            PlayAllAudioComponents(transform);
+        }
     }
 
     IEnumerator DissolveCoroutine() {
