@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f5b03efd4620f4f49a59bcd6608be8db, type: 2}
+  - {fileID: 2100000, guid: 7dbf43635f9d3ce42b93f314f7740688, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -280,9 +280,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageRenderer: {fileID: 7541224128000848892}
   fadeDuration: 30
-  prefabToInstantiate: {fileID: 6937594102664545426}
-  newParent: {fileID: 8464081899072296901, guid: 2058b2a428bd66b469903b31a2c4da2f,
-    type: 3}
 --- !u!54 &3561784221247622432
 Rigidbody:
   m_ObjectHideFlags: 0

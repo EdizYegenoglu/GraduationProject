@@ -14,6 +14,9 @@ public class SkyboxChanger : MonoBehaviour
     private void Start()
     {
         RenderSettings.skybox.SetFloat("_Exposure", currentExposure);
+        // Invoke("startTransition", delayTransition);
+    }
+    public void PlayGame(){
         Invoke("startTransition", delayTransition);
     }
 
