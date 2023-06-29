@@ -9,7 +9,6 @@ public class Photo : MonoBehaviour
     Color colorEnd = Color.white;
     public float fadeDuration = 1.0f;
 
-
     private Collider currentCollider = null;
     // private ApplyPhysics applyPhysics = null;
 

@@ -280,6 +280,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageRenderer: {fileID: 7541224128000848892}
   fadeDuration: 30
+  prefabToInstantiate: {fileID: 6937594102664545426}
+  newParent: {fileID: 8464081899072296901, guid: 2058b2a428bd66b469903b31a2c4da2f,
+    type: 3}
 --- !u!54 &3561784221247622432
 Rigidbody:
   m_ObjectHideFlags: 0
