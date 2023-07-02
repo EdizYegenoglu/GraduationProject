@@ -12,16 +12,16 @@ public class FadeScreen : MonoBehaviour
     public float FadeOutTime = 0f;
 
     void Start(){
-        // Invoke("FadeIn", FadeInTime);
-        // Invoke("FadeOut", FadeOutTime);
+        Invoke("FadeIn", FadeInTime);
+        Invoke("FadeOut", FadeOutTime);
         rend = GetComponent<Renderer>();
         if(fadeOnStart){
             FadeIn();
         }
     }
     public void PlayGame(){
-        Invoke("FadeIn", FadeInTime);
-        Invoke("FadeOut", FadeOutTime);
+        // Invoke("FadeIn", FadeInTime);
+        // Invoke("FadeOut", FadeOutTime);
     }
     public void FadeIn(){
         Fade(1,0);

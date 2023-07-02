@@ -16,8 +16,8 @@ public class DissolveChilds : MonoBehaviour
 
 
     void Start() {
-        // Invoke("Dissolve", delayPlay);
-        // Invoke("Dissolve", delayStop);
+        Invoke("Dissolve", delayPlay);
+        Invoke("Dissolve", delayStop);
         var renders = GetComponentsInChildren<Renderer>();
         for (int i = 0; i < renders.Length; i++) {
             materials.AddRange(renders[i].materials);
@@ -26,8 +26,8 @@ public class DissolveChilds : MonoBehaviour
     }
 
     public void PlayGame(){
-        Invoke("Dissolve", delayPlay);
-        Invoke("Dissolve", delayStop);
+        // Invoke("Dissolve", delayPlay);
+        // Invoke("Dissolve", delayStop);
     }
 
     private void Reset() {

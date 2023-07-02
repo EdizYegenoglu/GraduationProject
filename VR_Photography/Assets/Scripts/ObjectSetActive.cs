@@ -9,14 +9,14 @@ public class ObjectSetActive : MonoBehaviour
     public GameObject ItemToTurnOff;
 
     void Start(){
-        // Invoke("Show", delayShow);
-        // Invoke("Hide", delayHide)
+        Invoke("Show", delayShow);
+        Invoke("Hide", delayHide);
         ItemToTurnOff.SetActive(false);
     }
 
     public void PlayGame(){
-        Invoke("Show", delayShow);
-        Invoke("Hide", delayHide);
+        // Invoke("Show", delayShow);
+        // Invoke("Hide", delayHide);
     }
 
     public void Show(){

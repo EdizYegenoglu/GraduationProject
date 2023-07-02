@@ -8,7 +8,6 @@ public class StartButton : MonoBehaviour
     public float value = 0f;
 
     void Update(){
-
         if (Input.GetKeyDown(KeyCode.Space)){
             Dissolve();
         }

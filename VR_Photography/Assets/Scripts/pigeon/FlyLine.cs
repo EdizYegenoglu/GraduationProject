@@ -10,11 +10,11 @@ public class FlyLine : MonoBehaviour
     public float delayPlay = 0f;
     
     public void Start(){
-        // Invoke("Fly", delayPlay);
+        Invoke("Fly", delayPlay);
     }
 
     public void PlayGame(){
-        Invoke("Fly", delayPlay);
+        // Invoke("Fly", delayPlay);
     }
 
     public void Fly(){
