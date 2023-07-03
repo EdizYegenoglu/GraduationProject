@@ -95,11 +95,11 @@ public class DissolveChilds : MonoBehaviour
             AudioSource audioSource = child.GetComponent<AudioSource>();
             if (audioSource != null){
                 if (audioSource.isPlaying){
-                    Debug.Log("audio false");
+                    // Debug.Log("audio false");
                     StartCoroutine(FadeOutAudio(audioSource, 1.0f));
                 }
                 else{
-                    Debug.Log("audio true");
+                    // Debug.Log("audio true");
                     audioSource.Play();
                 }
             }
